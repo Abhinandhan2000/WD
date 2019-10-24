@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		name<input type="text" name="name" id="txt_name"/>
+		email<input type="email" name="email" id="txt_email"/>
+		<input type="button" name="submit" value="submit" onclick="printdata()"/>
+	</form>
+	<script type="text/javascript">
+		function printdata()
+		{
+			let name1=document.getElementById("txt_name").value;
+			let ema=document.getElementById("txt_email").value;
+			document.write("Entered name is:"+name1+"<br>");
+			document.write("Entered mail id is:"+ema+"<br>");
+		}
+		
+	</script>
+
+</body>
+</html>

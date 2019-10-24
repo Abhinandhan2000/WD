@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var r=prompt("Enter no. of rows");
+		var c=prompt("Enter no. of columns");
+		if (r==null||r==""&&c==null||c=="") {
+			r=10;
+			c=10;
+		}
+		createTable(r,c);
+		function createTable(r,c)
+		{
+			var o="<table border='1' cellpadding=5>";
+			for (var i = 1; i <= r; i++) 
+			{	o=o+"<tr>";
+				for (var j = 1; j<=c; j++) 
+				{	o=o+"<td>"+i*j+"</td>"
+
+				}
+				o=o+"</tr>"
+			}
+			o=o+"</table>";
+			document.write(o);	
+		}	
+				
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n=parseInt(prompt("Enter a number"));
+		var c=true;
+		for(var i=2;i<=n/2;i++)
+		{
+			if(n%i==0)
+			{
+				c=false;
+				break;
+			}
+		}
+		if(n>1&&c==true)
+			document.write(n+" is a prime number");
+		else
+			document.write(n+" is not a prime number");
+	</script>
+
+</body>
+</html>

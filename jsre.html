@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str="JavaScript is the programming language of HTML and the web.JavaScript is easy to learn.This tutorial will teach you JavaScript from basic to advanced.52";
+		let re=/JAVASCRIPT/ig
+		let r=str.match(re)
+		document.write(r+"<br>");
+		let str1=str.replace("programming","SOS");
+		document.write(str1+"<br>");
+		let x=str.search("web")
+		document.write(x+"<br>");
+		let z=/and/.test(str)
+		document.write(z+"<br>")
+		let g=/[0-9]/g
+		let g1=str.match(g)
+		document.write(g1+"<br>")
+		let y=/[A-Z]/g
+		let y1=str.match(y)
+		document.write(y1+"<br>")
+		let p=/[a-z]/g
+		let p1=str.match(p)
+		document.write(p1+"<br>")
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

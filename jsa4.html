@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+
+		
+	<p>This is 1st para</p>
+	<p>This is 2nd para</p>
+	<p>This is 3rd para</p>
+	<p>This is 4th para</p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML="Hello world!";
+		var x=document.getElementsByTagName('p');
+		for (var i = 0; i < x.length; i++) {
+			x[i].style="border-style:dotted;border-color:red;border-width:5px;";
+		}
+	</script>
+	
+
+
+</body>
+</html>
